@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD BILLING INFO</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JS/action.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/jQuery-ui.js"></script>
+</head>
+<body>
+    <form method="post" action="action.php">
+
+    <div id="first_display">
+        <div class="form_section">
+            <div class="form_section_heading">
+                ENTER EXISTING CUSTOMER CODE
+            </div>
+
+            <table>
+                <colgroup>
+                    <col style="width: 33.33%">
+                    <col style="width: 33.33%">
+                    <col style="width: 33.33%">
+                </colgroup>
+
+                <tr>
+                    <td></td>
+                    <td><input class="Input_Text" type="text" name="Add_Bill_Cust_Code" placeholder="Ex: NYPD"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btnDiv">
+            <button type="button" class="button" id="next" >NEXT</button>
+        </div>
+    </div>
+
+    <div id="second_display">
+        <div class="form_section">
+            <div class="form_section_heading">
+                BILLING INFO
+            </div>
+
+            <table>
+                <colgroup>
+                    <col style="width: 50%">
+                    <col style="width: 50%">
+                </colgroup>
+
+                <tr>
+                    <th>Address Name</th>
+                    <th>Address Line 1</th>
+                </tr>
+                <tr>
+                    <td><input class="Input_Text" type="text" name="Bl_Name" placeholder="Ex: Brooklyn Facility"></td>
+                    <td><input class="Input_Text" type="text" name="Bl_Add1" placeholder="Ex: 345 18th Street"></td>
+                </tr>
+
+                <tr>
+                    <th>Address Line 2</th>
+                    <th>Address Line 3</th>
+                </tr>
+                <tr>
+                    <td><input class="Input_Text" type="text" name="Bl_Add2" placeholder="Ex: Recieving"></td>
+                    <td><input class="Input_Text" type="text" name="Bl_Add3" placeholder="Ex: Brooklyn, NY 11225"></td>
+                </tr>
+
+                <tr>
+                    <th>Country</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><input class="Input_Text" type="text" name="Bl_Country" placeholder="Ex: USA"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btnDiv">
+            <input type="submit" class="button" value="ADD BILLING INFO">
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>

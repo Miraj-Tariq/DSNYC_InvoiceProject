@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTER CUSTOMER</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JS/validation.js"></script>
+    <script src="JS/action.js"></script>
+</head>
+<body>
+    <form method="post" action="PHP/customers.php" >
+
+    <div class="form_section">
+        <div class="form_section_heading">
+            CUSTOMER INFO
+        </div>
+
+        <table>
+            <colgroup>
+                <col style="width: 50%">
+                <col style="width: 50%">
+            </colgroup>
+
+            <tr>
+                <th>Customer Name</th>
+                <th>Terms of Sale</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="Input_Text" type="text" name="Cust_Name" placeholder="Ex: NYPD Equipment Section" autofocus>
+                    <br>
+                    <div class="errorDiv" id="Cust_NameE"></div>
+                </td>
+                <td>
+                    <input class="Input_Text" type="text" name="TOS" placeholder="Ex: DDP">
+                    <br>
+                    <div class="errorDiv" id="TOSE"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Terms Location</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="Input_Text" type="text" name="TOS_Location" placeholder="Ex: NY">
+                    <br>
+                    <div class="errorDiv", id="TOS_LocationE"></div>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form_section">
+        <div class="form_section_heading">
+            SHIPPING INFO
+        </div>
+
+        <table>
+            <colgroup>
+                <col style="width: 50%">
+                <col style="width: 50%">
+            </colgroup>
+
+            <tr>
+                <th>Address Name</th>
+                <th>Address Line 1</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="Input_Text" type="text" name="Sh_Name" placeholder="Ex: College Point Police Academy">
+                    <br>
+                    <div class="errorDiv" id="Sh_NameE"></div>
+                </td>
+                <td>
+                    <input class="Input_Text" type="text" name="Sh_Add1" placeholder="Ex: 127-10 10th Avenue">
+                    <br>
+                    <div class="errorDiv" id="Sh_Add1E"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Address Line 2</th>
+                <th>Address Line 3</th>
+            </tr>
+            <tr>
+                <td><input class="Input_Text" type="text" name="Sh_Add2" placeholder="Ex: Street level"></td>
+                <td><input class="Input_Text" type="text" name="Sh_Add3" placeholder="Ex: Flushing, NY 11354-2527"></td>
+            </tr>
+
+            <tr>
+                <th>Country</th>
+                <th>Additional Info</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="Input_Text" type="text" name="Sh_Country" placeholder="Ex: USA">
+                    <br>
+                    <div class="errorDiv" id="Sh_CountryE"></div>
+                </td>
+                <td><input class="Input_Text" type="text" name="Sh_Additional"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form_section">
+        <div class="form_section_heading">
+            BILLING INFO
+        </div>
+
+        <table>
+            <colgroup>
+                <col style="width: 50%">
+                <col style="width: 50%">
+            </colgroup>
+
+            <tr>
+                <th>Address Name</th>
+                <th>Address Line 1</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="Input_Text" type="text" name="Bl_Name" placeholder="Ex: Brooklyn Facility">
+                    <br>
+                    <div class="errorDiv" id="Bl_NameE"></div>
+                </td>
+                <td>
+                    <input class="Input_Text" type="text" name="Bl_Add1" placeholder="Ex: 345 18th Street">
+                    <br>
+                    <div class="errorDiv" id="Bl_Add1E"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Address Line 2</th>
+                <th>Address Line 3</th>
+            </tr>
+            <tr>
+                <td><input class="Input_Text" type="text" name="Bl_Add2" placeholder="Ex: Recieving"></td>
+                <td><input class="Input_Text" type="text" name="Bl_Add3" placeholder="Ex: Brooklyn, NY 11225"></td>
+            </tr>
+
+            <tr>
+                <th>Country</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="Input_Text" type="text" name="Bl_Country" placeholder="Ex: USA">
+                    <br>
+                    <div class="errorDiv" id="Bl_CountryE"></div>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form_section">
+        <div class="form_section_heading">
+            MARKS & NUMBERS INFO
+        </div>
+
+        <div class="form_section_heading" style="left: 80%; top: -35px;">
+            <button style="padding: 4px 8px; font-size: 15px; font-weight: bold;" onclick="return addMarksNumbers();">+</button>
+        </div>
+
+        <div class="form_section_heading" style="left: 87%; top: -55px;">
+            <button style="padding: 4px 8px; font-size: 15px; font-weight: bold;" onclick="return delMarksNumbers();">&ndash;</button>
+        </div>
+
+        <table id="marksNumbers" style="margin: 20px 0;">
+            <tr>
+                <td style="padding: 0;">
+                    <input class="Input_Text" style="width:700px;" type="text" name="marks[]" placeholder="Line 1">
+                    <br>
+                    <div class="errorDiv" id="mark1E"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="btnDiv">
+        <input type="submit" class="button" value="REGISTER CUSTOMER" onclick="return validateCustomer();" />
+    </div>
+
+    </form>
+</body>
+</html>

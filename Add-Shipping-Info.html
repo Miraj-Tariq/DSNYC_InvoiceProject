@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD SHIPPING INFO</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JS/action.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/jQuery-ui.js"></script>
+</head>
+<body>
+    <form method="post" action="action.php">
+
+    <div id="first_display">
+        <div class="form_section">
+            <div class="form_section_heading">
+                ENTER EXISTING CUSTOMER CODE
+            </div>
+
+            <table>
+                <colgroup>
+                    <col style="width: 33.33%">
+                    <col style="width: 33.33%">
+                    <col style="width: 33.33%">
+                </colgroup>
+
+                <tr>
+                    <td></td>
+                    <td><input class="Input_Text" type="text" name="Add_Ship_Cust_Code" placeholder="Ex: NYPD"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btnDiv">
+            <button type="button" class="button" id="next" >NEXT</button>
+        </div>
+    </div>
+
+    <div id="second_display">
+        <div class="form_section">
+            <div class="form_section_heading">
+                SHIPPING INFO
+            </div>
+
+            <table>
+                <colgroup>
+                    <col style="width: 50%">
+                    <col style="width: 50%">
+                </colgroup>
+
+                <tr>
+                    <th>Address Name</th>
+                    <th>Address Line 1</th>
+                </tr>
+                <tr>
+                    <td><input class="Input_Text" type="text" name="Sh_Name" placeholder="Ex: College Point Police Academy"></td>
+                    <td><input class="Input_Text" type="text" name="Sh_Add1" placeholder="Ex: 127-10 10th Avenue"></td>
+                </tr>
+
+                <tr>
+                    <th>Address Line 2</th>
+                    <th>Address Line 3</th>
+                </tr>
+                <tr>
+                    <td><input class="Input_Text" type="text" name="Sh_Add2" placeholder="Ex: Street level"></td>
+                    <td><input class="Input_Text" type="text" name="Sh_Add3" placeholder="Ex: Flushing, NY 11354-2527"></td>
+                </tr>
+
+                <tr>
+                    <th>Country</th>
+                    <th>Additional Info</th>
+                </tr>
+                <tr>
+                    <td><input class="Input_Text" type="text" name="Sh_Country" placeholder="Ex: USA"></td>
+                    <td><input class="Input_Text" type="text" name="Sh_Additional"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btnDiv">
+            <input type="submit" class="button" value="ADD SHIPPING INFO">
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>

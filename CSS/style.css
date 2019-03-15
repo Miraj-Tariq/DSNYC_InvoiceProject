@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+
+
+header {
+    width:100%;
+    height: 100px;
+    border: 1px solid brown;
+    background-color: gainsboro;
+}
+
+#logo {
+    width: 35%;
+    height: 80px;
+    border: 1px dotted red;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 80px;
+}
+
+#navigation {
+    width: 60%;
+    height: 80px;
+    border: 1px dotted red;
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 80px;
+}
+
+#body {
+    height: 1500px;
+    width: 100%;
+    border: 1px solid green;
+    /*background-color: gainsboro;*/
+    margin-top: 10px;
+}
+
+#second_display {
+    display: none;
+}
+
+#pageTitle {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#custName {
+    font-family: 'Roboto Slab', serif;
+    color: #858585;
+    font-size:16px;
+}
+
+.purple {
+    color: #9F1E61;
+}
+
+.green {
+    color: #7FBA39;
+}
+
+.errorDiv {
+    font-size: 10px;
+    color: red;
+    padding-bottom: 15px;
+    display: none;
+}
+
+/*
+<--------------------FORM SECTION STYLES-------------------->
+*/
+
+.form_section {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    border:1px solid #9F1E61;
+}
+
+.form_section_heading {
+    clear: both;
+    float:left;
+    height: 20px;
+    position: relative;
+    top: -10px;
+    left: 30px;
+    background-color: white;
+    color: #858585;
+    padding: 0 20px;
+    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*
+<--------------------TABLE STYLE-------------------->
+*/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+td, th {
+    text-align: left;
+    padding: 0 8px;
+}
+
+th {
+    font-size: 14px;
+    color: #7FBA39;
+    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+td {
+    font-size: 14px;
+    padding-bottom: 4px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*
+<--------------------FORM STYLE-------------------->
+*/
+
+.Input_Select {
+    height: 22px;
+    width: 300px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.Input_Text {
+    height: 20px;
+    width: 300px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#Sel_Item_Code {
+    width: 50px;
+}
+
+.DSX1 {
+    width: 120px;
+}
+
+.DSX2 {
+    width: 80px;
+}
+
+#HTS1 {
+    width: 60px;
+}
+
+#HTS2 {
+    width: 40px;
+}
+
+#HTS3 {
+    width: 60px;
+}
+
+.DIM {
+    width: 80px;
+}
+
+label {
+    font-size: 12px;
+    color: #9F1E61;
+    font-weight: bold;
+}
+
+/*
+<--------------------BUTTON STYLE-------------------->
+*/
+
+.btnDiv {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.button {
+    padding: 15px 20px;
+    color: #9F1E61;
+    background-color: #7FBA39;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.button:hover {
+    color: #7FBA39;
+    background-color: #9F1E61;
+}
+
+.smallBtn {
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/*
+<--------------------PREVIEW STYLE-------------------->
+*/
+
+#preview_section {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    border:1px dashed #858585;
+}
+
+.preview_section_heading {
+    clear: both;
+    float:left;
+    height: 20px;
+    position: relative;
+    top: -10px;
+    left: 30px;
+    background-color: white;
+    color: #858585;
+    padding: 0 20px;
+    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.preview_details {
+    font-family: arial, sans-serif;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #858585;
+}
+
+/*
+<--------------------TWITTER TYPEAHEAD-------------------->
+*/
+
+
+span.twitter-typeahead .tt-menu {
+    cursor: pointer;
+}
+
+.dropdown-menu, span.twitter-typeahead .tt-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #373a3c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem; }
+
+span.twitter-typeahead .tt-suggestion {
+    display: block;
+    width: 100%;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #373a3c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: none;
+    border: 0; }
+span.twitter-typeahead .tt-suggestion:focus, .dropdown-item:hover, span.twitter-typeahead .tt-suggestion:hover {
+    color: #2b2d2f;
+    text-decoration: none;
+    background-color: #f5f5f5; }
+span.twitter-typeahead .active.tt-suggestion, span.twitter-typeahead .tt-suggestion.tt-cursor, span.twitter-typeahead .active.tt-suggestion:focus, span.twitter-typeahead .tt-suggestion.tt-cursor:focus, span.twitter-typeahead .active.tt-suggestion:hover, span.twitter-typeahead .tt-suggestion.tt-cursor:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0275d8;
+    outline: 0; }
+span.twitter-typeahead .disabled.tt-suggestion, span.twitter-typeahead .disabled.tt-suggestion:focus, span.twitter-typeahead .disabled.tt-suggestion:hover {
+    color: #818a91; }
+span.twitter-typeahead .disabled.tt-suggestion:focus, span.twitter-typeahead .disabled.tt-suggestion:hover {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)"; }
+span.twitter-typeahead {
+    width: 100%; }
+.input-group span.twitter-typeahead {
+    display: block !important; }
+.input-group span.twitter-typeahead .tt-menu {
+    top: 2.375rem !important; }

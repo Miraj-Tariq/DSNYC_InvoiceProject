@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+
+
+header {
+    width: 100%;
+    display: inline;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#logo-section {
+    width: 30%;
+    float: left;
+    padding: 20px 15px;
+}
+
+#logo-section img {
+    height: 80px;
+    width: auto;
+}
+
+nav {
+    float: right;
+    width: 64%;
+    padding: 25px 10px;
+    margin-top:25px;
+
+}
+
+#nav-menu {
+    width: 100%;
+    margin-left:0px;
+}
+
+#nav-menu > li {
+    list-style-type: none;
+    float: left;
+}
+
+#nav-menu > li:last-child {
+    border-right: none;
+}
+
+#nav-menu > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #7FBA39;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#nav-menu > li > a:hover {
+    background-color: #9F1E61;
+}
+
+
+
+
+
+
+
+
+.nav-sub-menu {
+    margin: 0;
+    padding: 0;
+    display: none
+}
+
+.nav-sub-menu > li {
+    margin: 28px 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+}
+
+li:hover .nav-sub-menu{
+    display: block;
+    width: auto;
+    position: absolute;
+    background-color: #9F1E61;
+    top: 92px;
+}
+
+.nav-sub-menu > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 8px;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.nav-sub-menu > li > a:hover {
+    background-color: #7FBA39;
+}
+
+button {
+    font-family: Arial;
+    font-weight: bold;
+    color: #7FBA39;
+    background-color: #9F1E61;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+
+
+
+
+
+#current-process {
+    /*display: none;*/
+    background-color: #9F1E61;
+    border-left: 2px solid whitesmoke;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    margin: -15px 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+#body-wrapper {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 130px;
+}
+
+#body {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+}
